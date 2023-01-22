@@ -8,7 +8,7 @@ const Products = (props) => {
     const {img, name, price, ratings, seller} = products;
     return (
         <div className='product'>
-            <img src={img} alt={''}/>
+            <img src={img ? img : 'no-images-found'} alt={''}/>
             <div className='product-info'>
                 <p className='name'>{name}</p>
                 <p> Price: {price}</p>
